@@ -1,0 +1,158 @@
+/* General Reset */
+body, h1, h3, p, ul, li, blockquote, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 20px;
+}
+
+/* Main Container */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h1#title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Image and Caption */
+#img-div {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  transition: transform 0.3s ease;
+}
+
+#image:hover {
+  transform: scale(1.02);
+}
+
+#img-caption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 10px;
+  padding: 0 15px;
+}
+
+/* Section */
+#tribute-info {
+  margin-top: 20px;
+}
+
+h3#headline {
+  font-size: 1.8rem;
+  color: #34495e;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Timeline */
+ul {
+  list-style: none;
+  margin: 20px 0;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 15px;
+  padding-left: 25px;
+  position: relative;
+}
+
+ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #16a085;
+  font-weight: bold;
+}
+
+/* Blockquote */
+blockquote {
+  margin: 20px 0;
+  padding: 15px 20px;
+  background: #ecf0f1;
+  border-left: 5px solid #3498db;
+  font-style: italic;
+}
+
+blockquote p {
+  margin-bottom: 5px;
+}
+
+blockquote cite {
+  display: block;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  text-align: right;
+}
+
+/* Link */
+a#tribute-link {
+  color: #e74c3c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a#tribute-link:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  
+  main {
+    padding: 15px;
+  }
+  
+  h1#title {
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  h3#headline {
+    font-size: 1.5rem;
+  }
+  
+  ul li {
+    padding-left: 20px;
+  }
+}
